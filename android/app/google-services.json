@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "624249640274",
+    "firebase_url": "https://aeroguide000.firebaseio.com",
+    "project_id": "aeroguide000",
+    "storage_bucket": "aeroguide000.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624249640274:android:3a0a899a2e778b2e52968b",
+        "android_client_info": {
+          "package_name": "com.demo.aero_guide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624249640274-0qh4qmec0s565s1cqbq8pt20ljo6nra2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demo.aero_guide",
+            "certificate_hash": "2779ac41758c2a9c513d509abfecf5e349f3dd8d"
+          }
+        },
+        {
+          "client_id": "624249640274-qd0sov4j5e2e29vkibghp15ta9j7uohf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDidUxDCo9hJiWgTwZtQzrz7Sw359sEMws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624249640274-qd0sov4j5e2e29vkibghp15ta9j7uohf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
