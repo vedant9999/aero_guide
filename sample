@@ -1,0 +1,22 @@
+import requests
+from bs4 import BeautifulSoup
+
+quote_page = "https://www.flipkart.com/search?q=laptop&sid=6bo%2Cb5g&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_sc_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_sc_na_na&as-pos=1&as-type=RECENT&suggestionId=laptop%7CLaptops&requestId=a0202148-5301-42f9-9913-5c41e8e53e3b&as-backfill=on"
+
+html = requests.get(quote_page).content
+soup = BeautifulSoup(html)
+divPrice = soup.find_all("div", {"class": "_3I9_wc _27UcVY"})
+divname = soup.find_all("div", {"class": "_4rR01T"})
+divofferprice = soup.find_all("div", {"class": "_30jeq3 _1_WHN1"})
+import pandas as pd
+dict = {'Price':[],
+        'Name':[],
+        'Offer Price':[]
+       }
+  
+df = pd.DataFrame(dict)
+
+for i in zip(divPrice,divname,divofferprice):
+    df.loc[len(df.index)] = [i[0].text, i[1].text, i[2].text] 
+    
+df.to_excel('Scrapping.xlsx')
